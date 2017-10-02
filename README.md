@@ -49,7 +49,7 @@ The goals / steps of this project are the following:
 
 > I tried various combinations of parameters and settled with parameters that gave the best training accuracy.
 
-####3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
+#### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
 > I trained a linear SVM using all the available features which included Histogram of Oriented Gradients (HOG), Spatial Color Features and Histogram of Color Features. This can be seen in the third code cell of the IPython notebook.
 
