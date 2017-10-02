@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image3]: ./examples/sliding_windows.jpg
 [image4]: ./examples/heatmap1.png
 [image5]: ./examples/heatmap2.png
-[image6]: ./output_images/frame1.jpg
+[image6]: ./output_images/frame_1.jpg
 [image7]: ./examples/heatmap_39.jpg
 [image8]: ./examples/output_39.jpg
 [image9]: ./vimeo_link.png "Link to Vimeo"
@@ -37,13 +37,13 @@ The goals / steps of this project are the following:
 
 > I started by reading in all the `vehicle` and `non-vehicle` images.  Here is an example of one of each of the `vehicle` and `non-vehicle` classes:
 
-> !["Car and Non-Car Image"][image1]
+> ![Car and Non-Car Image][image1]
 
 > I then explored different color spaces and different `skimage.hog()` parameters (`orientations`, `pixels_per_cell`, and `cells_per_block`).  I grabbed random images from each of the two classes and displayed them to get a feel for what the `skimage.hog()` output looks like.
 
 > Here is an example using the `YCrCb` color space and HOG parameters of `orientations=8`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)`:
 
-> !["Car and Non-Car HOG"][image2]
+> ![Car and Non-Car HOG][image2]
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
@@ -59,15 +59,15 @@ The goals / steps of this project are the following:
 
 > I decided to search all window positions at a scale of 1.5 over the bottom region of the image and came up with this:
 
-> !["Sliding Windows"][image3]
+> ![Sliding Windows][image3]
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 > Ultimately I searched on one scale using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
-> !["Heatmap #1"][image4]
-> !["Heatmap #2"][image5]
-> !["Sample Frame"][image6]
+> ![Heatmap #1][image4]
+> ![Heatmap #2][image5]
+> ![Sample Frame][image6]
 ---
 
 ### Video Implementation
@@ -83,10 +83,10 @@ The goals / steps of this project are the following:
 > Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video:
 
 ### Here is the heatmap for last frame:
-> !["Heatmap"][image7]
+> ![Heatmap][image7]
 
 ### Here the resulting bounding boxes are drawn onto the last frame in the series:
-> !["Bounding Box"][image8]
+> ![Bounding Box][image8]
 
 ---
 
